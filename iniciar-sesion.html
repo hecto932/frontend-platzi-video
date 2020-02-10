@@ -18,6 +18,7 @@
   <body>
     <header class="header">
       <img
+        tabindex="0"
         class="header__img"
         src="logo-platzi-video-BW2.png"
         alt="Platzi Video"
@@ -27,8 +28,18 @@
       <section class="login__container">
         <h2>Inicia sesión</h2>
         <form class="login__container--form">
-          <input class="input" type="text" placeholder="Correo" />
-          <input class="input" type="password" placeholder="Contraseña" />
+          <input
+            aria-label="Correo"
+            class="input"
+            type="text"
+            placeholder="Correo"
+          />
+          <input
+            aria-label="Contraseña"
+            class="input"
+            type="password"
+            placeholder="Contraseña"
+          />
           <button class="button">Iniciar sesión</button>
           <div class="login__container--remember-me">
             <label>
